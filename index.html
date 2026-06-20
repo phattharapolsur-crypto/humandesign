@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Human Design Thailand</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Human Design</h1>
+<p class="subtitle">Discover Your Blueprint</p>
+
+<form id="chartForm">
+
+<label>วันเกิด</label>
+<input type="date" id="birthDate" required>
+
+<label>เวลาเกิด</label>
+<input type="time" id="birthTime" required>
+
+<button type="submit">
+Generate Chart
+</button>
+
+</form>
+
+<div id="loading" class="hidden">
+Calculating...
+</div>
+
+<div id="result" class="hidden"></div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
